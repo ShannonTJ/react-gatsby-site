@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { FaBars } from "react-icons/fa"
-import { menuData } from "../data/menuData"
+import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
 
 const Header = () => {

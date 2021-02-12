@@ -1,26 +1,26 @@
 [
     {
         "img": "../assets/images/travel-1.jpg",
-        "alt": "Tian Tan Buddha",
-        "name": "Tian Tan Buddha",
+        "alt": "Handara Gate",
+        "name": "Bali, Indonesia",
         "button": "View Destination"
     },
         {
         "img": "../assets/images/travel-2.jpg",
-        "alt": "Tian Tan Buddha",
-        "name": "Tian Tan Buddha",
+        "alt": "Eiffel Tower",
+        "name": "Paris, France",
         "button": "View Destination"
     },
         {
         "img": "../assets/images/travel-3.jpg",
-        "alt": "Tian Tan Buddha",
-        "name": "Tian Tan Buddha",
+        "alt": "Venice Canal",
+        "name": "Venice, Italy",
         "button": "View Destination"
     },
         {
         "img": "../assets/images/travel-4.jpg",
-        "alt": "Tian Tan Buddha",
-        "name": "Tian Tan Buddha",
+        "alt": "Fushimi Inari-taisha",
+        "name": "Kyoto, Japan",
         "button": "View Destination"
     }
 ]
