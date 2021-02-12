@@ -29,12 +29,20 @@ const Trips = () => {
     const tripsArray = []
     data.allTripsJson.edges.forEach((item, index) => {
       tripsArray.push(
-        <div key={index}>
+        <ProductCard key={index}>
           <Img
             src={item.node.img.childImageSharp.fluid}
+            alt={item.node.alt}
             fluid={item.node.img.childImageSharp.fluid}
           />
-        </div>
+          <ProductInfo>
+            <TextWrap>
+              <ImLocation />
+              <ProductTitle>{item.node.name}</ProductTitle>
+            </TextWrap>
+            <Button to="/trips">{item.node.button}</Button>
+          </ProductInfo>
+        </ProductCard>
       )
     })
     return tripsArray
