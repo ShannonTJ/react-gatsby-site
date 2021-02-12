@@ -1,18 +1,19 @@
 import React from "react"
 import styled from "styled-components"
 import { Button } from "./Button"
+import Video from "../assets/videos/video.mp4"
 
 const Hero = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <Video src="" type="video/mp4" />
+        <VideoBg src={Video} type="video/mp4" autoPlay loop muted playsInline />
       </HeroBg>
       <HeroContent>
         <HeroItems>
           <HeroH1>Unreal Destinations</HeroH1>
           <HeroP>Out of this world</HeroP>
-          <Button>Learn More</Button>
+          <Button to="/">Learn More</Button>
         </HeroItems>
       </HeroContent>
     </HeroContainer>
@@ -25,11 +26,17 @@ const HeroContainer = styled.div`
   background: #0c0c0c;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 1rem;
+  position: relative;
+  margin-top: -80px;
+  color: #fff;
 `
 
 const HeroBg = styled.div``
 
-const Video = styled.video``
+const VideoBg = styled.video``
 
 const HeroContent = styled.div``
 
