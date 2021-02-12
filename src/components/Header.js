@@ -1,13 +1,21 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 import { FaBars } from "react-icons/fa"
+import { menuData } from "../data/menuData"
 
 const Header = () => {
   return (
     <Nav>
       <NavLink to="/">REACT</NavLink>
       <Bars />
+      <NavMenu>
+        {menuData.map(item, index => (
+          <NavLink to={item.link} key={index}>
+            {item.title}
+          </NavLink>
+        ))}
+      </NavMenu>
     </Nav>
   )
 }
@@ -44,5 +52,14 @@ const Bars = styled(FaBars)`
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
+  }
+`
+const NavMenu = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: -48px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `
