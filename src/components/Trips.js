@@ -39,7 +39,7 @@ const Trips = ({ heading }) => {
           />
           <ProductInfo>
             <TextWrap>
-              <ImLocation />
+              <ImLocationStyled />
               <ProductTitle>{item.node.name}</ProductTitle>
             </TextWrap>
             <Button
@@ -80,6 +80,7 @@ const ProductsContainer = styled.div`
 const ProductsHeading = styled.div`
   font-size: clamp(1.2rem, 5vw, 3rem);
   text-align: center;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   color: #000;
 `
@@ -144,4 +145,9 @@ const ProductTitle = styled.div`
   font-weight: 400;
   font-size: 1rem;
   margin-left: 0.5rem;
+  color: #fff;
+`
+
+const ImLocationStyled = styled(ImLocation)`
+  color: #fff;
 `
