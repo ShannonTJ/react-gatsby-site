@@ -32,7 +32,7 @@ const Trips = () => {
     data.allTripsJson.edges.forEach((item, index) => {
       tripsArray.push(
         <ProductCard key={index}>
-          <Img
+          <ProductImg
             src={item.node.img.childImageSharp.fluid}
             alt={item.node.alt}
             fluid={item.node.img.childImageSharp.fluid}
@@ -60,21 +60,21 @@ const Trips = () => {
 
 export default Trips
 
-export const ProductsContainer = styled.div`
+const ProductsContainer = styled.div`
   min-height: 100vh;
   padding: 5rem calc((100vw-1300px) / 2);
   background: #000;
   color: gray;
 `
 
-export const ProductsHeading = styled.div`
+const ProductsHeading = styled.div`
   font-size: clamp(1.2rem, 5vw, 3rem);
   text-align: center;
   margin-bottom: 5rem;
   color: #000;
 `
 
-export const ProductWrapper = styled.div`
+const ProductWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
@@ -90,10 +90,30 @@ export const ProductWrapper = styled.div`
   }
 `
 
-export const ProductCard = styled.div``
+const ProductCard = styled.div`
+  line-height: 2;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  border-radius: 10px;
+  transition: 0.2s ease;
+`
 
-export const ProductInfo = styled.div``
+const ProductImg = styled(Img)`
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+  border-radius: 10px;
+  filter: brightness(70%);
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-export const TextWrap = styled.div``
+  &:hover {
+    filter: brightness(100%);
+  }
+`
 
-export const ProductTitle = styled.div``
+const ProductInfo = styled.div``
+
+const TextWrap = styled.div``
+
+const ProductTitle = styled.div``
