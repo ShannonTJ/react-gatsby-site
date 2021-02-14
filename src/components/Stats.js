@@ -1,12 +1,47 @@
 import React from "react"
 import styled from "styled-components"
 import { GiEarthAmerica } from "react-icons/gi"
+import { MdAirplanemodeActive, MdTimer } from "react-icons/md"
+import { FaMoneyCheck } from "react-icons/fa"
+
+const StatsData = [
+  {
+    icon: <GiEarthAmerica />,
+    title: "Over 100 Destinations",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    icon: <MdAirplanemodeActive />,
+    title: "1 Million Trips Made",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    icon: <MdTimer />,
+    title: "Fastest Support",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    icon: <FaMoneyCheck />,
+    title: "Best Deals",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+]
 
 const Stats = () => {
   return (
     <StatsContainer>
       <Heading>Why Choose Us?</Heading>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        {StatsData.map((item, index) => {
+          return (
+            <StatsBox key={index}>
+              <Icon>{item.icon}</Icon>
+              <Title>{item.title}</Title>
+              <Description>{item.description}</Description>
+            </StatsBox>
+          )
+        })}
+      </Wrapper>
     </StatsContainer>
   )
 }
@@ -43,3 +78,10 @@ const Wrapper = styled.div`
     grid-template-columns: repeat(1fr);
   }
 `
+const StatsBox = styled.div``
+
+const Icon = styled.div``
+
+const Title = styled.div``
+
+const Description = styled.div``
