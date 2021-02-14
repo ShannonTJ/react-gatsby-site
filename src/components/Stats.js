@@ -78,10 +78,20 @@ const Wrapper = styled.div`
     grid-template-columns: repeat(1fr);
   }
 `
-const StatsBox = styled.div``
+const StatsBox = styled.div`
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+`
 
-const Icon = styled.div``
+const Icon = styled.div`
+  font-size: 3rem;
+  margin-bottom: 1rem;
+`
 
-const Title = styled.div``
+const Title = styled.div`
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin-bottom: 0.5rem;
+`
 
-const Description = styled.div``
+const Description = styled.p``
