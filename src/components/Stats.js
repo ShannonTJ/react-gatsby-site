@@ -12,7 +12,7 @@ const Stats = () => {
             <StatsBox key={index}>
               <Icon>{item.icon}</Icon>
               <Title>{item.title}</Title>
-              <Description>{item.description}</Description>
+              <Description>{item.desc}</Description>
             </StatsBox>
           )
         })}
@@ -33,11 +33,12 @@ const StatsContainer = styled.div`
   padding: 4rem calc((100vw - 1300px) / 2);
 `
 
-const Heading = styled.h1`
+const Heading = styled.div`
   text-align: start;
   font-size: clamp(1.5rem, 5vw, 2rem);
   margin-bottom: 3rem;
   padding: 0 2rem;
+  font-weight: bold;
 `
 
 const Wrapper = styled.div`

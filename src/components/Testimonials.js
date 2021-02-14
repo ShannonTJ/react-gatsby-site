@@ -29,7 +29,7 @@ const Testimonials = () => {
 
   return (
     <TestimonialsContainer>
-      <Heading>Testimonials</Heading>
+      {/* <Heading>Testimonials</Heading> */}
       <Description>What People are Saying</Description>
       <ContentWrapper>
         <ColumnOne>
@@ -46,7 +46,7 @@ const Testimonials = () => {
               "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
               et, non illum commodi dolorem fuga aspernatur, repellat sed minus
               quos error! Eveniet voluptate maiores maxime, at quae voluptatem
-              veritatis dignissimos.
+              veritatis dignissimos."
             </p>
           </Testimonial>
           <Testimonial>
@@ -62,7 +62,7 @@ const Testimonials = () => {
               "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
               et, non illum commodi dolorem fuga aspernatur, repellat sed minus
               quos error! Eveniet voluptate maiores maxime, at quae voluptatem
-              veritatis dignissimos.
+              veritatis dignissimos."
             </p>
           </Testimonial>
         </ColumnOne>
@@ -93,7 +93,7 @@ const Heading = styled.p`
   margin-bottom: 0.75rem;
 `
 
-const Description = styled.p`
+const Description = styled.div`
   text-align: start;
   padding-left: 2rem;
   margin-bottom: 4rem;
