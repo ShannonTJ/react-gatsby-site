@@ -71,16 +71,16 @@ const Trips = ({ heading }) => {
 export default Trips
 
 const ProductsContainer = styled.div`
-  min-height: 100vh;
-  padding: 5rem calc((100vw-1300px) / 2);
+  width: 100%;
+  padding: 4rem calc((100vw - 1300px) / 2);
   color: gray;
 `
 
 const ProductsHeading = styled.div`
   font-size: clamp(1.2rem, 5vw, 3rem);
   text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 0rem;
+  margin-bottom: 4rem;
   color: #000;
 `
 
