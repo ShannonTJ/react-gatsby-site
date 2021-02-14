@@ -18,7 +18,7 @@ const Testimonials = () => {
           node {
             childImageSharp {
               fluid {
-                src
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -34,7 +34,13 @@ const Testimonials = () => {
       <ContentWrapper>
         <ColumnOne>
           <Testimonial>
-            <IoMdCheckmarkCircleOutline />
+            <IoMdCheckmarkCircleOutline
+              css={`
+                color: #3fffa8;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+              `}
+            />
             <h3>Jane Doe</h3>
             <p>
               "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
@@ -44,7 +50,13 @@ const Testimonials = () => {
             </p>
           </Testimonial>
           <Testimonial>
-            <FaRegLightbulb />
+            <FaRegLightbulb
+              css={`
+                color: #f9b19b;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+              `}
+            />
             <h3>John Doe</h3>
             <p>
               "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
@@ -101,7 +113,7 @@ const ContentWrapper = styled.div`
 
 const ColumnOne = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 `
 
 const Testimonial = styled.div`
