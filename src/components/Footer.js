@@ -1,4 +1,6 @@
 import React from "react"
+import styled from "styled-components"
+import { Link } from "gatsby"
 
 const Footer = () => {
   return (
@@ -35,3 +37,15 @@ const Footer = () => {
 }
 
 export default Footer
+
+const FooterContainer = styled.div``
+
+const FooterDesc = styled.div``
+
+const FooterLinksWrapper = styled.div``
+
+const FooterLinkItems = styled.div``
+
+const FooterLinkTitle = styled.div``
+
+const FooterLink = styled(Link)``
