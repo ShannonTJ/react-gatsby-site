@@ -40,39 +40,44 @@ export default Footer
 
 const FooterContainer = styled.div`
   padding: 5rem calc((100vw - 1100px) / 2);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
+
   color: #000;
   background: #fafafb;
 `
 
 const FooterDesc = styled.div`
-  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
   h1 {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     color: #f26a2e;
   }
 
-  @media screen and (max-width: 400px) {
-    padding: 1rem;
+  p {
+    padding: 0rem 3rem;
   }
 `
 
 const FooterLinksWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 
-  @media screen and (max-width: 820px) {
-    grid-template-columns: 1fr;
+  @media screen and (max-width: 720px) {
+    grid-template-columns: 1fr 1fr;
   }
 `
 
 const FooterLinkItems = styled.div`
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 1rem 2rem;
+  align-items: center;
+  padding: 1rem 3rem;
 
   @media screen and (max-width: 400px) {
     padding: 1rem;
@@ -82,6 +87,7 @@ const FooterLinkItems = styled.div`
 const FooterLinkTitle = styled.h2`
   font-size: 14px;
   margin-bottom: 16px;
+  text-align: center;
 `
 
 const FooterLink = styled(Link)`

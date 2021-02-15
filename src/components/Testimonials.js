@@ -86,12 +86,12 @@ const TestimonialsContainer = styled.div`
   height: 100%;
 `
 
-const Heading = styled.p`
-  color: #077bf1;
-  font-size: 1rem;
-  padding-left: 2rem;
-  margin-bottom: 0.75rem;
-`
+// const Heading = styled.p`
+//   color: #077bf1;
+//   font-size: 1rem;
+//   padding-left: 2rem;
+//   margin-bottom: 0.75rem;
+// `
 
 const Description = styled.div`
   text-align: start;
