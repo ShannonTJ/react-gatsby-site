@@ -4,10 +4,10 @@ import { Link } from "gatsby"
 import { FaTimes } from "react-icons/fa"
 import { Button } from "./Button"
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <SidebarContainer>
-      <Icon>
+    <SidebarContainer isOpen={isOpen}>
+      <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
@@ -24,6 +24,7 @@ const Sidebar = () => {
             round="true"
             css={`
               font-size: 1.2rem;
+              padding: 16px 64px;
             `}
           >
             Book a Flight
@@ -47,10 +48,9 @@ const SidebarContainer = styled.aside`
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
-  top: 0;
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0%")};
+  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `
-//  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0%")};
-//   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 
 const Icon = styled.div`
   position: absolute;
@@ -75,10 +75,6 @@ const SidebarMenu = styled.ul`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 80px);
   text-align: center;
-
-  @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(5, 60px);
-  }
 `
 
 const SidebarLink = styled(Link)`

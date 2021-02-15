@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Travel Site`,
+    title: `React/Gatsby Travel Site`,
     description: `Travel site showcasing the best destinations and deals.`,
     author: `@gatsbyjs`,
   },
