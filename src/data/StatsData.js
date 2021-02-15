@@ -12,7 +12,7 @@ export const StatsData = [
         `}
       />
     ),
-    title: "Over 100 Destinations",
+    title: "100+ Destinations",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
