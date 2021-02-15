@@ -119,6 +119,7 @@ const ColumnOne = styled.div`
 const Testimonial = styled.div`
   padding-top: 1rem;
   padding-right: 2rem;
+  margin-bottom: 3rem;
 
   h3 {
     margin-bottom: 1rem;

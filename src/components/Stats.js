@@ -46,12 +46,12 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 
-  @media screen and(max-width: 768px) {
-    grid-template-columns: repeat(1fr);
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  @media screen and(max-width: 500px) {
-    grid-template-columns: repeat(1fr);
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `
 const StatsBox = styled.div`
@@ -68,6 +68,7 @@ const Icon = styled.div`
 const Title = styled.p`
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   margin-bottom: 0.5rem;
+  font-weight: bold;
 `
 
 const Description = styled.p``
