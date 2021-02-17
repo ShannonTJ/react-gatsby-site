@@ -51,6 +51,7 @@ const FooterDesc = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
 
   h1 {
@@ -59,7 +60,8 @@ const FooterDesc = styled.div`
   }
 
   p {
-    padding: 0rem 3rem;
+    padding: 0rem 2rem;
+    font-size: 14px;
   }
 `
 
